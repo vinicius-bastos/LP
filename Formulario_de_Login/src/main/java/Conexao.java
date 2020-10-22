@@ -5,13 +5,14 @@ import org.springframework.jdbc.core.JdbcTemplate;
 
 public class Conexao {
 
+    
     public static void main(String[] args) {
                 // Configurando e estabelecendo a Conexão com o banco de dados
         BasicDataSource dataSource = new BasicDataSource();
         // Indicando a classe do Driver de banco
         dataSource.setDriverClassName("org.h2.Driver");
         // Indicando a URL do banco
-        dataSource.setUrl("jdbc:h2:file:./bancoControlDamp");
+        dataSource.setUrl("jdbc:h2:file:C:\\Users\\Aluno\\Documents\\NetBeansProjects\\Formulario_de_Login/bancoControlDamp");
         // Indicando o usuário e senha de acesso
         dataSource.setUsername("sa");
         dataSource.setPassword(""); 
